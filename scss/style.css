@@ -1323,6 +1323,10 @@ html {
   bottom: 0;
 }
 
+.client-section {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
 .client-section .client-wrapper .client-logo {
   width: 120px !important;
   cursor: pointer;
