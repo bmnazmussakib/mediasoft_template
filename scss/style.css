@@ -59,6 +59,10 @@ section {
   margin: 0 15px;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -748,7 +752,7 @@ html {
   display: flex;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
   transition: all 1s;
 }
 .service .service-card-wrapper-2 .service-card h2 {
@@ -766,7 +770,7 @@ html {
   left: 0;
   top: 50%;
   transform: translate(0%, -50%);
-  transition: all 1s;
+  transition: all 1s ease;
 }
 .service .service-card-wrapper-2 .service-card:hover h2 {
   transform: translateX(20px);
@@ -786,7 +790,7 @@ html {
   background: #fff;
 }
 .service .service-card-wrapper-2 .service-card:nth-child(odd) {
-  background: #f1f1f1;
+  background: #ffffff;
   color: #4e4e4e;
 }
 .service .service-card-wrapper-2 .service-card:nth-child(odd) h2::before {
@@ -1223,11 +1227,15 @@ html {
 }
 .testimonial .testimonial-wrapper .slick-arrow {
   font-size: 1.5em;
-  background: #64dfff;
+  background: #e5e5e5;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   color: #fff;
+  transition: all 1s;
+}
+.testimonial .testimonial-wrapper .slick-arrow:hover {
+  background: #00adee;
 }
 .testimonial .testimonial-wrapper .testimonial-card {
   width: 800px !important;
