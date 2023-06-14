@@ -667,6 +667,14 @@ html {
   transform: scale(1);
 }
 
+.service {
+  background: #fafafa;
+  position: relative;
+  background: url("../images/bg/doodle-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
 .service .section-title {
   color: #4e4e4e;
 }
@@ -806,11 +814,6 @@ html {
   background: #fff;
 }
 
-.service-2 .service-wrapper .card-col .service-card {
-  width: 100%;
-  height: 250px;
-}
-
 .medi-featire-main {
   background: linear-gradient(0deg, #693eaa 0%, #64dfff 100%);
   background-size: cover;
@@ -906,9 +909,11 @@ html {
 }
 
 .who-we-are {
+  background: url("../images/bg/background-02.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .who-we-are .section-title {
   color: #4e4e4e;
@@ -1026,6 +1031,11 @@ html {
 .why-we-unique {
   background: #fafafa;
   position: relative;
+  background: url("../images/bg/background-02.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 .why-we-unique span {
   left: 0;
@@ -1118,6 +1128,21 @@ html {
 
 .skills {
   background: linear-gradient(90deg, #693eaa 0%, #64dfff 100%);
+  position: relative;
+}
+.skills::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg/stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
 }
 .skills .section-subtitle {
   color: #fff;
@@ -1221,6 +1246,19 @@ html {
 
 .testimonial {
   background: #fafafa;
+  position: relative;
+}
+.testimonial .bg-icon {
+  position: absolute;
+}
+.testimonial .bg-icon-1 {
+  left: 0;
+}
+.testimonial .bg-icon-2 {
+  right: -5%;
+  bottom: 0%;
+  opacity: 0.3;
+  width: 200px;
 }
 .testimonial .title-wrapper .section-subtitle {
   color: #64dfff;

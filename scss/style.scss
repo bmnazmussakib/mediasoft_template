@@ -750,6 +750,12 @@ html {
 }
 
 .service {
+  background: #fafafa;
+  position: relative;
+  background: url('../images/bg/doodle-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   .section-title {
     color: $black;
   }
@@ -855,11 +861,12 @@ html {
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
       transition: all 1s;
 
-      h2{
+      h2 {
         font-size: 1.3rem;
         position: relative;
         padding-left: 40px;
         transition: all 1s;
+
         &::before {
           position: absolute;
           content: "";
@@ -874,8 +881,9 @@ html {
       }
 
       &:hover {
-        h2{
+        h2 {
           transform: translateX(20px);
+
           &::before {
             position: absolute;
             content: "";
@@ -886,9 +894,11 @@ html {
 
       &:nth-child(even) {
         // background: linear-gradient(0deg, #693eaa 0%, #64dfff 100%);
-        background:$primary-blue;
-        h2{
+        background: $primary-blue;
+
+        h2 {
           color: #fff;
+
           &::before {
             background: #fff;
           }
@@ -898,7 +908,8 @@ html {
       &:nth-child(odd) {
         background: #ffffff;
         color: $black;
-        h2{
+
+        h2 {
           &::before {
             background: $black;
           }
@@ -906,27 +917,16 @@ html {
 
         &:hover {
           background: $primary-blue;
-          h2{
+
+          h2 {
             color: #fff;
+
             &::before {
               background: #fff;
             }
           }
         }
       }
-
-    }
-  }
-}
-
-.service-2 {
-  .service-wrapper {
-    .card-col {
-      .service-card {
-        width: 100%;
-        height: 250px;
-      }
-
 
     }
   }
@@ -1048,10 +1048,11 @@ html {
 }
 
 .who-we-are {
-  // background: url('../images/bg/bg.png');
+  background: url('../images/bg/background-02.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 
   .section-title {
     color: $black;
@@ -1212,6 +1213,11 @@ html {
 .why-we-unique {
   background: #fafafa;
   position: relative;
+  background: url('../images/bg/background-02.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 
   span {
     left: 0;
@@ -1330,6 +1336,22 @@ html {
 
 .skills {
   background: linear-gradient(90deg, #693eaa 0%, #64dfff 100%);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg/stars.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+  }
 
   .section-subtitle {
     color: $white;
@@ -1493,6 +1515,23 @@ html {
 
 .testimonial {
   background: #fafafa;
+  position: relative;
+
+  .bg-icon {
+    position: absolute;
+  }
+
+  .bg-icon-1 {
+    left: 0;
+  }
+
+  .bg-icon-2 {
+    right: -5%;
+    bottom: 0%;
+    opacity: 0.3;
+    width: 200px;
+
+  }
 
   .title-wrapper {
     .section-title {}
@@ -1516,7 +1555,7 @@ html {
       transition: all 1s;
 
       &:hover {
-      background: $primary-blue;
+        background: $primary-blue;
       }
     }
 
