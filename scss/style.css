@@ -36,6 +36,7 @@ section {
   font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
+  color: #4e4e4e;
 }
 
 .text {
@@ -1326,6 +1327,9 @@ html {
 .client-section {
   padding-top: 50px;
   padding-bottom: 0px;
+}
+.client-section .title-wrapper .section-subtitle {
+  color: #64dfff;
 }
 .client-section .client-wrapper .client-logo {
   width: 120px !important;

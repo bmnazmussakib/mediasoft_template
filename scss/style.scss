@@ -1623,6 +1623,11 @@ html {
 .client-section {
   padding-top: 50px;
   padding-bottom: 0px;
+  .title-wrapper{
+    .section-subtitle{
+      color: #64dfff;
+    }
+  }
   .client-wrapper {
     .client-logo {
       width: 120px !important;
